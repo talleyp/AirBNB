@@ -10,7 +10,7 @@ library(dplyr)
 library(sentimentr)
 library(ggmap)
 
-register_google(key = "AIzaSyBufwbd4zk0sjPACDC15TFQIIatTSMplC4")
+register_google(key = )
 
 # Load data
 path = "data/"
