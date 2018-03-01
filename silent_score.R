@@ -1,4 +1,22 @@
-
+full_to_city <- function(x){
+  if(x == 'New York, NY'){ return('NYC')}
+  else if(x == 'Boston, MA'){ return('Boston') }
+  else if(x == 'Washington, DC'){ return('DC') }
+  else if(x == 'Los Angeles, CA'){ return('LA') }
+  else if(x == 'San Francisco, CA'){ return('SF') }
+  else if(x == 'Chicago, IL'){ return('Chicago') }
+  else{ return(NA) }
+}
+un_percent <- function(x){
+  t <- as.character(x)
+  t <- as.numeric(gsub('%','',t))
+  if(is.na(t)){
+    return(0)
+  }
+  else{
+    return(t)
+  }
+}
 
 
 #' Calculate the score of sentences
