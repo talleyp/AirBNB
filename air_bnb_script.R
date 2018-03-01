@@ -10,8 +10,6 @@ library(dplyr)
 library(sentimentr)
 #library(ggmap)
 
-#register_google(key = "AIzaSyBufwbd4zk0sjPACDC15TFQIIatTSMplC4")
-
 # Load data
 path = "data/"
 train <- read.csv(paste0(path,"train.csv"),stringsAsFactors = TRUE)
